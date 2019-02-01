@@ -1,32 +1,224 @@
+b{
+  margin-right: 10px
+}
+
+
 .App {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  min-width: 1200px;
+  min-height: 600px;
+  background-color: gray;
+}
+
+#adder,
+#editor{
+  position: absolute;
+  top: 30%;
+  left: 32%;
+  height: 15%;
+  padding: 25px;
+  background-color: whitesmoke;
+}
+
+#atable,
+#etable{
+  float: left;
+}
+
+#npc{
+  float: right;
+}
+
+#current{
+  position: absolute;
+  top: 0%;
+  left: 32%;
+  height: 15%;
+  width: 20%;
+  background-color: black;
+  border: 8px inset white;
+  font-size: 30pt;
+  text-align: center;
+  line-height: 90px;
+  font-family: fantasy
+}
+
+#clear{
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+#list{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: calc(100% - 2px);
+  width: 30%;
+  background-color: darkslategray;
+  border: 1px solid black;
+  overflow: auto;
+}
+
+#fighter{
+  position: relative;
+  margin: 10px;
+  height: 15%;
+  width: 90%;
+  border: outset;
+  background-color: blanchedalmond
+}
+
+#start{
+  position: absolute;
+  left: 32%;
+  top: 18%;
+}
+
+#nextEnd{
+  position: absolute;
+  left: 32%;
+  top: 18%;
+  width: calc(20% + 15px);
+}
+
+#b,
+#next{
+  float: right;
+}
+
+#a,
+#end{
+  float: left;
+}
+
+#cancel,
+#remove{
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  background-color: transparent;
+  color: red;
+  border: none;
+  cursor: pointer;
+}
+
+#edit,
+#next,
+#end,
+#start,
+#new,
+#clear,
+#add{
+  border-radius: 10px;
+  background-color: red;
+  border: 2px solid black;
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+#edit:hover,
+#next:hover,
+#end:hover,
+#start:hover,
+#new:hover,
+#clear:hover,
+#add:hover{
+  background-color: black;
+  border:2px solid red;
+}
+
+
+.nameInit{
+  height: 100%;
+  width: calc(50% - 30px);
+  text-align: center;
+  font-size: 15pt;
+  line-height: 30px;
+  padding: 15px;
+  float: left;
+  border: 5px outset white;
+}
+
+#player{
+  background-color: blue
+}
+
+#enemy{
+  background-color: red
+}
+
+#ally{
+  background-color: lightgray
+}
+
+#boss{
+  background-color: black;
+  color: gold
+}
+
+#n{
+  font-family: 'fantasy'
+}
+
+#acHP{
+  position: relative;
+  height: 100%;
+  width: 50%;
+  float: left;
+  text-align: center;
+  font-size: 16pt;
+  font-weight: 900;
+  line-height: 40px;
+}
+
+#round{
+  position: absolute;
+  top: 7.5%;
+  left: 60%;
+}
+
+#dmg{
+  width: 15%;
+  height: 15%;
+}
+
+#hd{
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+#h{
+  text-align: right;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#heal,
+#damage{
+  width: 80px;
+  border-radius: 10px;
+  border-color: black;
+  font-weight: 900;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+#heal{
+  background-color: rgb(0, 221, 0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#damage{
+  background-color: red;
+}
+
+#heal:hover{
+  background-color: black;
+  border-color: rgb(0, 221, 0);
+  color: rgb(0, 221, 0);
+}
+
+#damage:hover{
+  background-color: black;
+  border-color: red;
+  color: red;
 }
